@@ -2855,20 +2855,18 @@ section,
 }
 
 
-/* ===========================
-   Mobile Responsive Fix
-=========================== */
+/* ==========================
+   Mobile Resume Timeline Fix
+========================== */
 
 @media (max-width: 768px) {
 
-  .resume .resume-item,
-  .education .education-item {
-    padding-left: 35px !important;
+  .resume .resume-item .resume-content {
+    padding-left: 1.5rem;
   }
 
-  .resume .resume-item::before,
-  .education .education-item::before {
-    left: -8px !important;
+  .resume .resume-item article::before {
+    left: -1rem;
   }
 
 }
