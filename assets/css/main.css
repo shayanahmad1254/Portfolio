@@ -2853,3 +2853,22 @@ section,
 .starter-section {
   /* Add your styles here */
 }
+
+
+/* ===========================
+   Mobile Responsive Fix
+=========================== */
+
+@media (max-width: 768px) {
+
+  .resume .resume-item,
+  .education .education-item {
+    padding-left: 35px !important;
+  }
+
+  .resume .resume-item::before,
+  .education .education-item::before {
+    left: -8px !important;
+  }
+
+}
