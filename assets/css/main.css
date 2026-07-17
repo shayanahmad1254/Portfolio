@@ -1392,7 +1392,7 @@ section,
   background-color: var(--accent-color);
 }
 
-/*--------------------------------------------------------------
+//*--------------------------------------------------------------
 # Resume Section
 --------------------------------------------------------------*/
 .resume .resume-item {
@@ -1435,7 +1435,7 @@ section,
   width: 16px;
   height: 16px;
   border-radius: 50%;
-  left: -9px;
+  left: -1.8rem;
   top: 0.25rem;
   background: var(--background-color);
   border: 2px solid var(--accent-color);
@@ -1520,22 +1520,57 @@ section,
   color: var(--accent-color);
 }
 
+/* ---------- Tablet ---------- */
+
 @media (max-width: 991.98px) {
   .resume .resume-item {
     margin-bottom: 2rem;
   }
 }
 
+/* ---------- Mobile Fix ---------- */
+
 @media (max-width: 767.98px) {
-  .resume .resume-content {
-    padding-left: 1rem !important;
+
+  .resume .resume-item {
+    margin-bottom: 2rem;
   }
 
-  .resume article::before {
-    left: -2rem !important;
+  .resume .resume-item .resume-title {
+    font-size: 1.6rem;
   }
+
+  .resume .resume-item .resume-content {
+    padding-left: 1.5rem;
+    border-left: 2px solid color-mix(in srgb, var(--accent-color), transparent 85%);
+  }
+
+  .resume .resume-item article {
+    margin-bottom: 2rem;
+  }
+
+  .resume .resume-item article::before {
+    width: 14px;
+    height: 14px;
+    left: -1.45rem;
+    top: 0.35rem;
+  }
+
+  .resume .resume-item article h4 {
+    font-size: 1.15rem;
+    line-height: 1.4;
+  }
+
+  .resume .resume-item article h5 {
+    font-size: 0.95rem;
+  }
+
+  .resume .resume-item article .institution,
+  .resume .resume-item article .company {
+    font-size: 0.95rem;
+  }
+
 }
-
 /*--------------------------------------------------------------
 # Services Section
 --------------------------------------------------------------*/
@@ -2852,21 +2887,4 @@ section,
 --------------------------------------------------------------*/
 .starter-section {
   /* Add your styles here */
-}
-
-
-/* ==========================
-   Mobile Resume Timeline Fix
-========================== */
-
-@media (max-width: 768px) {
-
-  .resume .resume-item .resume-content {
-    padding-left: 1.5rem;
-  }
-
-  .resume .resume-item article::before {
-    left: -1rem;
-  }
-
 }
