@@ -1525,15 +1525,33 @@ section,
     margin-bottom: 2rem;
   }
 }
+@media (max-width: 767.98px) {
+
+  .resume .resume-item article::before {
+    transform: translateX(-4px);
+  }
+
+}
 
 @media (max-width: 767.98px) {
-  .resume .resume-content {
-    padding-left: 1rem !important;
+
+  .resume .container {
+    padding-left: 22px;
+    padding-right: 22px;
   }
 
-  .resume article::before {
-    left: -2rem !important;
+  .resume .resume-item .resume-content {
+    padding-left: 1.3rem;
+    border-left: 2px solid color-mix(in srgb, var(--accent-color), transparent 85%);
   }
+
+  .resume .resume-item article::before {
+    left: -1.58rem;
+    top: 0.28rem;
+    width: 16px;
+    height: 16px;
+  }
+
 }
 
 /*--------------------------------------------------------------
@@ -2851,5 +2869,5 @@ section,
 # Starter Section Section
 --------------------------------------------------------------*/
 .starter-section {
-  /* Add your styles here */
-}
+/* ===========================================
+  
