@@ -2866,7 +2866,7 @@ section,
   }
 
   .resume .resume-item article::before {
-    left: -1rem;
+    left: -0.7rem;
   }
 
 }
